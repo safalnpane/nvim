@@ -136,3 +136,4 @@ vim.keymap.set('t', '<esc>', '<C-\\><C-n>')
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.cmd("colorscheme gruvbox")
+vim.opt.cursorline = true
