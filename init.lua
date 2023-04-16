@@ -22,6 +22,7 @@ vim.opt.clipboard:append { 'unnamedplus' }
 require("packer").startup(function(use)
 	use { "wbthomason/packer.nvim" }
 	use { "ellisonleao/gruvbox.nvim" }
+	use { "audibleblink/hackthebox.vim" }
 	use {
 		'nvim-telescope/telescope.nvim',
 		requires = { {'nvim-lua/plenary.nvim'} }
@@ -48,8 +49,12 @@ require("packer").startup(function(use)
   	},
 	use {"akinsho/toggleterm.nvim", tag = '*' },
 	use "terrortylor/nvim-comment",
+	use "windwp/nvim-autopairs",
 }
 end)
+
+-- Auto pairs
+require("nvim-autopairs").setup({})
 
 -- GRUVBOX
 require("gruvbox").setup({
@@ -135,5 +140,5 @@ vim.keymap.set('t', '<esc>', '<C-\\><C-n>')
 -- ================================================
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme hackthebox")
 vim.opt.cursorline = true
