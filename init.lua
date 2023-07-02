@@ -108,6 +108,7 @@ require("nvim_comment").setup({
 	operator_mapping = "<leader>/"
 })
 
+
 -- TERMINAL SETUP
 require("toggleterm").setup{
 	direction = "horizontal",
